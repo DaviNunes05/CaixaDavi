@@ -35,7 +35,7 @@ while True:
 	conta_digitada = input('Conta: ')
 	senha_digitada = getpass.getpass('Senha: ')
 	
-	if conta_digitada in lista_contas and senha_digitada == lista_contas	[conta_digitada]['senha']:
+	if conta_digitada in lista_contas and senha_digitada == lista_contas[conta_digitada]['senha']:
 		saldo = lista_contas[conta_digitada]['valor']
 		limpar()
 		#print(saldo)
