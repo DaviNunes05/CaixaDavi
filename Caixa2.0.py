@@ -110,12 +110,12 @@ def sacar_cedulas():
 			print(lista_contas[conta_aut]['valor'])
 
 def get_opcao_dig(conta_aut):
-		print('\nTitular: %s' % lista_contas[conta_aut]['nome'])
-		print('Escolha uma das opções abaixo: ')
-		print('1 - Saldo\n2 - Saque')
-		if lista_contas[conta_aut]['admin']:
-			print('10 - Incluir Cédulas\n11 - Saldo Caixa')
-		return input('Opção: ')
+	print('\nTitular: %s' % lista_contas[conta_aut]['nome'])
+	print('Escolha uma das opções abaixo: ')
+	print('1 - Saldo\n2 - Saque')
+	if lista_contas[conta_aut]['admin']:
+		print('10 - Incluir Cédulas\n11 - Saldo Caixa')
+	return input('Opção: ')
 
 def limpar():
 	os.system('cls' if os.name == 'nt' else 'clear')
